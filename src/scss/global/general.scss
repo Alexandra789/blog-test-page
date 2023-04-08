@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 16px;
+  max-width: 1168px;
+  margin: 0 auto;
+}
+
+.text-xs {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.text-s {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.title {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+}
+
+.logo__title {
+  font-weight: 700;
+  font-size: 43.25px;
+  line-height: 34px;
+}
+
+.subtitle {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 16px 56px;
+  color: $dark_blue;
+}
+
+input {
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+  background: $white;
+  border: 2px solid $white;
+  border-radius: 240px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: 2px solid $white;
+  -webkit-text-fill-color: $black;
+  background-color: $white !important;
+  -webkit-box-shadow: 0 0 0 0 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
