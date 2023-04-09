@@ -1,0 +1,76 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 117px;
+
+  &__wrapper {
+    display: flex;
+    gap: 179px;
+  }
+
+  .logo {
+    margin-bottom: 40px;
+    min-height: 41px;
+  }
+
+  &__about {
+    max-width: 300px;
+    width: 100%;
+
+    .description {
+      color: gray;
+      margin-bottom: 64px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    gap: 96px;
+
+    .navigation-col {
+      display: flex;
+      flex-direction: column;
+      max-width: 150px;
+
+      &__item {
+        margin-bottom: 40px;
+
+        &:first-of-type {
+          margin-bottom: 32px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        &:not(:first-of-type):hover {
+          color: $gray;
+        }
+      }
+
+      &__badge {
+        margin-left: 8px;
+      }
+
+      &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: $black;
+      }
+    }
+  }
+
+  .badge {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 28px;
+    color: $dark_blue;
+    background-color: $green;
+    padding: 1px 14px;
+    border-radius: 120px;
+  }
+}
