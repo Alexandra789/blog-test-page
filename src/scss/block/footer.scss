@@ -36,7 +36,12 @@
       max-width: 150px;
 
       &__item {
+        color: $gray;
+      }
+
+      &__item {
         margin-bottom: 40px;
+        min-height: 30px;
 
         &:first-of-type {
           margin-bottom: 32px;
@@ -47,11 +52,12 @@
         }
 
         &:not(:first-of-type):hover {
-          color: $gray;
+          color: $black;
         }
       }
 
       &__badge {
+        min-height: 30px;
         margin-left: 8px;
       }
 
