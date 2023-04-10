@@ -6,6 +6,9 @@
   @media all and (max-width: 429px) {
     margin-top: 32px;
   }
+  @media all and (max-width: 381px) {
+    margin-top: 24px;
+  }
 
   &__logo {
     margin-right: 16px;
@@ -19,9 +22,6 @@
     .nav {
       display: flex;
       align-items: center;
-      @media all and (max-width: 651px) {
-        display: none;
-      }
 
       &__menu {
         display: flex;
@@ -29,6 +29,12 @@
         gap: 40px;
         @media all and (max-width: 768px) {
           gap: 30px;
+        }
+        @media all and (max-width: 591px) {
+          gap: 18px;
+        }
+        @media all and (max-width: 381px) {
+          gap: 10px;
         }
 
         &__item {
@@ -39,6 +45,7 @@
             &:hover {
               color: $gray;
             }
+
           }
         }
       }
@@ -50,10 +57,30 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
+        @media all and (max-width: 681px) {
+          font-size: 12px;
+        }
+        @media all and (max-width: 521px) {
+          display: none;
+        }
 
         &:hover {
           border-color: #777777;
           color: #777777;
+        }
+      }
+
+      .log-in-btn.mobile {
+        display: none;
+        border: none;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg fill='%23000000' width='800px' height='800px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12,1A11,11,0,1,0,23,12,11.013,11.013,0,0,0,12,1Zm0,20a9.641,9.641,0,0,1-5.209-1.674,7,7,0,0,1,10.418,0A9.167,9.167,0,0,1,12,21Zm6.694-3.006a8.98,8.98,0,0,0-13.388,0,9,9,0,1,1,13.388,0ZM12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z'/%3E%3C/svg%3E");
+        @media all and (max-width: 521px) {
+          display: block;
         }
       }
     }
@@ -68,9 +95,16 @@
   &__img {
     width: 25px;
     height: 33px;
+    @media all and (max-width: 381px) {
+      width: 18px;
+      height: 24px;
+    }
   }
 
   &__title {
     margin-left: 11px;
+    @media all and (max-width: 381px) {
+      margin-left: 4px;
+    }
   }
 }
