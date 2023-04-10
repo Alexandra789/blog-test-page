@@ -1,27 +1,62 @@
 .footer {
   padding-top: 100px;
   padding-bottom: 117px;
+  @media all and (max-width: 841px) {
+    padding-top: 40px;
+    padding-bottom: 67px;
+  }
+  @media all and (max-width: 429px) {
+    padding-bottom: 32px;
+    padding-top: 24px;
+  }
 
   &__wrapper {
     display: flex;
     gap: 179px;
+    @media all and (max-width: 841px) {
+      display: block;
+    }
   }
 
   .logo {
     margin-bottom: 40px;
     min-height: 41px;
+    @media all and (max-width: 841px) {
+      margin-bottom: 24px;
+    }
+    @media all and (max-width: 429px) {
+      margin-bottom: 8px;
+    }
   }
 
   &__about {
     max-width: 300px;
     width: 100%;
+    @media all and (max-width: 1041px) {
+      max-width: 430px;
+    }
+    @media all and (max-width: 841px) {
+      max-width: 430px;
+    }
 
     .description {
       color: gray;
       margin-bottom: 64px;
+      @media all and (max-width: 841px) {
+        margin-bottom: 24px;
+      }
+      @media all and (max-width: 429px) {
+        margin-bottom: 8px;
+      }
 
       &:last-of-type {
         margin-bottom: 0;
+        @media all and (max-width: 841px) {
+          margin-bottom: 48px;
+        }
+        @media all and (max-width: 429px) {
+          margin-bottom: 32px;
+        }
       }
     }
   }
@@ -29,11 +64,24 @@
   &__navigation {
     display: flex;
     gap: 96px;
+    @media all and (max-width: 509px) {
+      gap: 56px;
+    }
+    @media all and (max-width: 429px) {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+    }
 
     .navigation-col {
       display: flex;
       flex-direction: column;
       max-width: 150px;
+      width: 100%;
+      @media all and (max-width: 429px) {
+        max-width: 100%;
+        align-items: center;
+      }
 
       &__item {
         color: $gray;
@@ -42,9 +90,17 @@
       &__item {
         margin-bottom: 40px;
         min-height: 30px;
+        position: relative;
+        @media all and (max-width: 429px) {
+          margin-bottom: 12px;
+          min-height: auto;
+        }
 
         &:first-of-type {
           margin-bottom: 32px;
+          @media all and (max-width: 429px) {
+            margin-bottom: 8px;
+          }
         }
 
         &:last-of-type {
@@ -57,15 +113,23 @@
       }
 
       &__badge {
-        min-height: 30px;
+        max-height: 30px;
         margin-left: 8px;
+        position: absolute;
+        top: 2px;
+        overflow: hidden;
+        @media all and (max-width: 681px) {
+          top: 0;
+        }
       }
 
       &__title {
         font-weight: 700;
-        font-size: 20px;
-        line-height: 32px;
         color: $black;
+        min-height: 36px;
+        @media all and (max-width: 429px) {
+          min-height: auto;
+        }
       }
     }
   }

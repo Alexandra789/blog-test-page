@@ -2,6 +2,17 @@
   .thoughts {
     margin: 45px 0 0;
     padding: 27.5px 0;
+    @media all and (max-width: 768px) {
+      margin: 25px 0 0;
+    }
+    @media all and (max-width: 681px) {
+      padding: 18px 0;
+      margin: 18px 0 0;
+    }
+    @media all and (max-width: 429px) {
+      padding: 8px 0;
+      margin: 8px 0 0;
+    }
 
     &__subtitle {
       color: $dark_blue;
@@ -21,6 +32,17 @@
     padding-bottom: 72px;
     border-bottom: 1px solid $dark_blue;
     margin-top: 40px;
+    @media all and (max-width: 1156px) {
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+    }
+    @media all and (max-width: 768px) {
+      margin-top: 20px;
+    }
+    @media all and (max-width: 429px) {
+      padding-bottom: 32px;
+    }
 
     .news {
       &__image {
@@ -28,6 +50,9 @@
         width: 100%;
         max-height: 386px;
         border-radius: 24px;
+        @media all and (max-width: 1156px) {
+          max-width: 100%;
+        }
       }
 
       &__content {
@@ -44,10 +69,25 @@
   .latest-news {
     margin: 96px auto 124px;
     max-width: 998px;
+    @media all and (max-width: 1030px) {
+      max-width: 665px
+    }
+    @media all and (max-width: 768px) {
+      margin: 66px auto 94px;
+    }
+    @media all and (max-width: 681px) {
+      max-width: 320px;
+    }
+    @media all and (max-width: 429px) {
+      margin: 32px auto 56px;
+    }
 
     &__title {
       color: $black;
       margin-bottom: 40px;
+      @media all and (max-width: 435px) {
+        margin-bottom: 24px;
+      }
     }
 
     &__wrapper {
@@ -55,6 +95,13 @@
       flex-wrap: wrap;
       gap: 80px 49px;
       margin-bottom: 96px;
+      @media all and (max-width: 1030px) {
+        justify-content: center;
+      }
+      @media all and (max-width: 681px) {
+        gap: 40px 0;
+        margin-bottom: 60px;
+      }
 
       .news {
         max-width: 300px;
@@ -62,6 +109,15 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        @media all and (max-width: 681px) {
+          min-height: auto;
+        }
+
+        &-info {
+          @media all and (max-width: 681px) {
+            margin-bottom: 4px;
+          }
+        }
 
         &__title {
           color: black;
@@ -72,23 +128,32 @@
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
+          @media all and (max-width: 681px) {
+            margin-bottom: 8px;
+          }
         }
 
         &__image {
           margin-bottom: 24px;
           max-height: 209px;
+          @media all and (max-width: 681px) {
+            margin-bottom: 16px;
+          }
         }
 
         &__content {
           height: 100%;
           display: flex;
           flex-direction: column;
+          @media all and (max-width: 681px) {
+            display: block;
+          }
         }
       }
     }
 
     .load-more-btn {
-      padding: 16px 56px;
+      padding: 14.5px 56px;
       border: 2px solid $dark_blue;
       color: $dark_blue;
       display: block;
@@ -102,7 +167,7 @@
   }
 
   .subscribe {
-    padding: 72px 0;
+    padding: 72px 16px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +178,12 @@
     background-size: cover;
     background-position-x: -5px;
     margin-bottom: 84px;
+    @media all and (max-width: 768px) {
+      margin-bottom: 54px;
+    }
+    @media all and (max-width: 429px) {
+      margin-bottom: 32px;
+    }
 
     &__title {
       color: $white;
@@ -124,6 +195,10 @@
       display: -webkit-box;
       -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
+      line-height: 70px;
+      @media all and (max-width: 531px) {
+        line-height: 42px;
+      }
     }
 
     .subscribe-form {
@@ -132,16 +207,32 @@
       display: flex;
       justify-content: center;
       gap: 24px;
+      @media all and (max-width: 691px) {
+        flex-wrap: wrap;
+      }
 
       &__input {
         padding: 12px 32px;
         max-width: 370px;
         width: 100%;
+        font-size: 20px;
+        line-height: 32px;
+        @media all and (max-width: 691px) {
+          max-width: 400px;
+        }
+
+        @media all and (max-width: 435px) {
+          font-size: 14px;
+          line-height: 26px;
+        }
       }
 
       &__btn {
         padding: 16px 56px;
         background-color: $green;
+        @media all and (max-width: 691px) {
+          width: 400px;
+        }
       }
     }
   }

@@ -45,21 +45,57 @@ img {
 .text-xs {
   font-size: 16px;
   line-height: 28px;
+  @media all and (max-width: 681px) {
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 
 .text-s {
   font-size: 20px;
   line-height: 32px;
+  @media all and (max-width: 681px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .text-xxxl {
   font-size: 64px;
   line-height: 84px;
+  @media all and (max-width: 768px) {
+    font-size: 56px;
+  }
+  @media all and (max-width: 561px) {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  @media all and (max-width: 504px) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  @media all and (max-width: 429px) {
+    font-size: 29px;
+    line-height: 33px;
+  }
 }
 
 .text-xxl {
   font-size: 48px;
   line-height: 72px;
+  @media all and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media all and (max-width: 531px) {
+    line-height: 42px;
+    font-size: 32px;
+  }
+  @media all and (max-width: 435px) {
+    font-size: 28px;
+  }
+  @media all and (max-width: 391px) {
+    font-size: 24px;
+  }
 }
 
 .title {
@@ -71,11 +107,13 @@ img {
   font-weight: 700;
   font-size: 43px;
   line-height: 34px;
-}
-
-.subtitle {
-  font-size: 48px;
-  line-height: 72px;
+  @media all and (max-width: 561px) {
+    font-size: 32px;
+    line-height: 21px;
+  }
+  @media all and (max-width: 435px) {
+    font-size: 24px;
+  }
 }
 
 button {
@@ -90,11 +128,13 @@ button {
   line-height: 28px;
   color: $dark_blue;
   border-radius: 56px;
+  @media all and (max-width: 435px) {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 
 input {
-  font-size: 20px;
-  line-height: 32px;
   color: $black;
   background: $white;
   border: 2px solid $white;
