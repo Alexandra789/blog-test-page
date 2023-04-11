@@ -76,21 +76,27 @@
     .navigation-col {
       display: flex;
       flex-direction: column;
-      max-width: 150px;
-      width: 100%;
+      width: 150px;
       @media all and (max-width: 429px) {
-        max-width: 100%;
+        width: 100%;
         align-items: center;
       }
 
-      &__item {
+      &__link {
         color: $gray;
+        max-width: 120px;
+      }
+
+      &__item-badge {
+        margin-right: -71.4px;
       }
 
       &__item {
         margin-bottom: 40px;
         min-height: 30px;
         position: relative;
+        display: flex;
+        align-items: center;
         @media all and (max-width: 429px) {
           margin-bottom: 12px;
           min-height: auto;
@@ -113,14 +119,9 @@
       }
 
       &__badge {
-        max-height: 30px;
         margin-left: 8px;
-        position: absolute;
-        top: 2px;
-        overflow: hidden;
-        @media all and (max-width: 681px) {
-          top: 0;
-        }
+        width: 71.4px;
+        max-height: 30px;
       }
 
       &__title {
