@@ -90,17 +90,25 @@
       }
     }
 
+    &__wrapper.open{
+      max-height: initial;
+    }
+
     &__wrapper {
       display: flex;
       flex-wrap: wrap;
       gap: 80px 49px;
       margin-bottom: 96px;
+      max-height: 929px;
+      overflow: hidden;
+      transition: all .3s;
       @media all and (max-width: 1030px) {
         justify-content: center;
       }
       @media all and (max-width: 681px) {
         gap: 40px 0;
         margin-bottom: 60px;
+        max-height: 766px;
       }
 
       .news {
@@ -150,6 +158,10 @@
           }
         }
       }
+    }
+
+    .load-more-btn.hidden{
+      display: none;
     }
 
     .load-more-btn {
